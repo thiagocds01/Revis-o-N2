@@ -1,88 +1,74 @@
-Thiago Silva@NotCastThiSilva MINGW64 ~/Documents/thiago/4 periodo/1
-$ git clone https://github.com/thiagocds01/Revis-o-N2.git
-Cloning into 'Revis-o-N2'...
-warning: You appear to have cloned an empty repository.
+# README
 
-Thiago Silva@NotCastThiSilva MINGW64 ~/Documents/thiago/4 periodo/1
-$ ls
+## Descrição do Repositório
+Este repositório foi criado como parte de um exercício no **4º período**, com o objetivo de revisar conceitos do Git. O projeto envolve o gerenciamento de versões de arquivos HTML e imagens, simulando um fluxo básico de desenvolvimento.
+
+## Passos Realizados
+
+### 1. Clonando o Repositório
+Foi clonado um repositório vazio usando o comando:
+```bash
+git clone https://github.com/thiagocds01/Revis-o-N2.git
+```
+
+### 2. Verificando o Conteúdo
+Após clonar, foi confirmado que o repositório estava vazio:
+```bash
+ls
+```
+
+### 3. Adicionando o Primeiro Arquivo
+Um arquivo inicial chamado `index.index` foi criado e adicionado ao repositório:
+```bash
+git add .
+git commit -m "criação de index da pagina"
+```
+O commit foi enviado ao repositório remoto:
+```bash
+git push origin main
+```
+
+### 4. Modificação do Projeto
+O arquivo `index.index` foi removido, e novos arquivos foram adicionados:
+- **`imagem/gato.jpg`**: uma imagem do gato.
+- **`index.html`**: uma nova página HTML.
+
+Estes arquivos foram adicionados e um novo commit foi realizado:
+```bash
+git add .
+git commit -m "inserindo foto do gato"
+```
+
+As alterações foram enviadas ao repositório remoto:
+```bash
+git push origin main
+```
+
+## Estrutura do Repositório
+Após as mudanças, o repositório possui a seguinte estrutura:
+```
 Revis-o-N2/
+│
+├── imagem/
+│   └── gato.jpg
+│
+└── index.html
+```
 
-Thiago Silva@NotCastThiSilva MINGW64 ~/Documents/thiago/4 periodo/1
-$ cd Revis-o-N2/
-
-Thiago Silva@NotCastThiSilva MINGW64 ~/Documents/thiago/4 periodo/1/Revis-o-N2 (main)
-$ git status
-On branch main
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        index.index
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-Thiago Silva@NotCastThiSilva MINGW64 ~/Documents/thiago/4 periodo/1/Revis-o-N2 (main)
-$ git add .
-
-Thiago Silva@NotCastThiSilva MINGW64 ~/Documents/thiago/4 periodo/1/Revis-o-N2 (main)
-$ git commit -m 'criação de index da pagina'
-[main (root-commit) 107079c] criação de index da pagina
- 1 file changed, 19 insertions(+)
- create mode 100644 index.index
-
-Thiago Silva@NotCastThiSilva MINGW64 ~/Documents/thiago/4 periodo/1/Revis-o-N2 (main)
-$ git push origin main
-Enumerating objects: 3, done.
-Counting objects: 100% (3/3), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 364 bytes | 364.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/thiagocds01/Revis-o-N2.git
- * [new branch]      main -> main
-
-Thiago Silva@NotCastThiSilva MINGW64 ~/Documents/thiago/4 periodo/1/Revis-o-N2 (main)
-$ code .
-
-Thiago Silva@NotCastThiSilva MINGW64 ~/Documents/thiago/4 periodo/1/Revis-o-N2 (main)
-$ git status
-On branch main
-Your branch is up to date with 'origin/main'.
-
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        deleted:    index.index
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        imagem/
-        index.html
-
-no changes added to commit (use "git add" and/or "git commit -a")
-
-Thiago Silva@NotCastThiSilva MINGW64 ~/Documents/thiago/4 periodo/1/Revis-o-N2 (main)
-$ git add .
-
-Thiago Silva@NotCastThiSilva MINGW64 ~/Documents/thiago/4 periodo/1/Revis-o-N2 (main)
-$ git commit -m 'inserindo foto do gato'
-[main 85a399a] inserindo foto do gato
- 3 files changed, 23 insertions(+), 19 deletions(-)
- create mode 100644 imagem/gato.jpg
- create mode 100644 index.html
- delete mode 100644 index.index
-
-Thiago Silva@NotCastThiSilva MINGW64 ~/Documents/thiago/4 periodo/1/Revis-o-N2 (main)
-$ git push origin main
-Enumerating objects: 6, done.
-Counting objects: 100% (6/6), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (4/4), done.
-Writing objects: 100% (5/5), 3.41 MiB | 1.72 MiB/s, done.
-Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/thiagocds01/Revis-o-N2.git
-   107079c..85a399a  main -> main
-
-Thiago Silva@NotCastThiSilva MINGW64 ~/Documents/thiago/4 periodo/1/Revis-o-N2 (main)
-$
+## Comandos Úteis
+- **Status do Repositório:**
+  ```bash
+  git status
+  ```
+- **Adicionar Arquivos:**
+  ```bash
+  git add .
+  ```
+- **Realizar Commit:**
+  ```bash
+  git commit -m "mensagem do commit"
+  ```
+- **Enviar Alterações:**
+  ```bash
+  git push origin main
+  ```
